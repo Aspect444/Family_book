@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title> My Family </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <center>
+        <h1> My Family </h1> <br>
+        <h3 id="text"> My Family Book </h3>
+        <img id="Snowleap" src="dad.jpg"><br><br>
+        <p id= "reat">Dad</p>
+        <button type="button" onclick="next()"> Next </button>
+    </center>
+    <script>
+        animal=["grandfather.jpg", "sister.jpg", "mom.jpg", "Me.jpg"];
+        ar =["Grandfather", "Sister", "Mom", "Me"];
+i = 0;
+function next()
+{
+  document.getElementById("Snowleap").src = animal[i];
+  document.getElementById("reat").innerHTML = ar[i];
+  i++;
+  
+   if ( i >= 5 )
+  {
+      i = document.getElementById("Snowleap").src;
+  }
+}
+    </script>
+</body>
+
+</html>
